@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form to capture user input -->
+        <form id="resume-form" class="form">
+            <h2>Resume Builder</h2>
+
+            <!-- Personal Information -->
+            <section>
+                <h3>Personal Information</h3>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="text" id="linkedin" placeholder="LinkedIn Profile">
+                <input type="file" id="profile-picture" accept="image/*">
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h3>Education</h3>
+                <input type="text" id="education-degree" placeholder="Degree" required>
+                <input type="text" id="education-school" placeholder="School/University" required>
+                <input type="text" id="education-year" placeholder="Year of Graduation">
+            </section>
+
+            <!-- Work Experience -->
+            <section>
+                <h3>Work Experience</h3>
+                <input type="text" id="work-position" placeholder="Position" required>
+                <input type="text" id="work-company" placeholder="Company" required>
+                <input type="text" id="work-duration" placeholder="Duration">
+            </section>
+
+            <!-- Skills -->
+            <section>
+                <h3>Skills</h3>
+                <input type="text" id="skills" placeholder="Skills (comma-separated)" required>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Container for the generated resume -->
+        <div id="resume" class="resume">
+            <!-- The resume content will be dynamically generated here -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
